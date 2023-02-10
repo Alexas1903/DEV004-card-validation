@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Validacion de tarjeta de credito</title>
+  </head>
+  <body>
+      <header>
+        
+          <h2  class="nombreEm"> Banco Universal</h2>  
+      </header>
+   
+      <h1>VALIDACIÓN DE TARJETA DE CREDITO</h1>
+      <section>
+      <form>
+          <label for="inputNombre" class="nombre">Nombre</label>
+          <input type="text" id="inputNombre" maxlength="19" autocomplete="off" class="input">
+          <label for="inputNumero">Número Tarjeta</label> 
+          <input id="cardNumber" type="text" maxlength="16" minlength="13" class="input">  
+      <p><button type= "button" id="btn" class="boton">Validar</button></p>
+         <div id= "maskify">
+         </div> 
+         <div
+         class="resultado" id="result"></div>
+      </form>
+      </section>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
