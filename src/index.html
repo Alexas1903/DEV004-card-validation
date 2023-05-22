@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
     <title>Validacion de tarjeta de credito</title>
   </head>
   <body>
-      <header>
-        <div class="logo" img src="logobank.png" alt="Banco Universal">
-          <h2  class="nombreEm"> Banco Universal</h2>
-          <h3  class="nav-link"> Inicio </h3>
-          <h3  class="nav-link"> Registrate </h3>
-          <h3  class="nav-link"> Contactanos </h3>
-        </div>  
-      </header>
+    <header>
+      <h2 class="nombreEm">Banco Universal</h2>
+    </header>
 
-      <h1>Validación de Tarjeta de Credito</h1>
-      <section>
+    <h1>VALIDACIÓN DE TARJETA DE CREDITO</h1>
+    <section>
       <form>
-        <div class="grupo">
-          <label for="inputNombre">Nombre</label>
-          <input type="text" id="inputNombre" maxlength="19" autocomplete="off">
-        </div>
-      <label for="inputNumero">Número Tarjeta</label> 
-      <input id="cardNumber" type="text" maxlength="16" minlength="13" class="input">  
-      <p><button type= "button" id="btn" class="boton">Validar</button></p>
-         <div id= "maskify" class="enmascarar">
-         </div> 
-         <div
-         class="resultado" id="result"></div>
+        <label for="inputNombre" class="nombre">Nombre</label>
+        <input
+          type="text"
+          id="inputNombre"
+          maxlength="19"
+          autocomplete="off"
+          class="input"
+        />
+        <label for="inputNumero">Número Tarjeta</label>
+        <input
+          id="cardNumber"
+          type="text"
+          maxlength="16"
+          minlength="13"
+          class="input"
+        />
+        <p><button type="button" id="btn" class="boton">Validar</button></p>
+        <div id="maskify"></div>
+        <div class="resultado" id="result"></div>
       </form>
-      </section>
+    </section>
     <script src="./index.js" type="module"></script>
   </body>
 </html>

@@ -15,7 +15,7 @@ describe('validator', () => {
       expect(validator.isValid('4083952015263')).toBe(true);
     });
 
-    it.only('debería retornar true para "79927398713"', () => {
+    it('debería retornar true para "79927398713"', () => {
       expect(validator.isValid('79927398713')).toBe(true);
     });
 
