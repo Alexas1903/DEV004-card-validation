@@ -1,20 +1,48 @@
-html,
 body {
-  height: 100%;
-  width: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  background-color: rgb(252, 247, 242);
 }
-header {
-  height: 70px;
-  padding: 10px;
-  align-items: center;
-  background-color: #005ea5;
-  box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.5);
+.contenedor-img{
+width: 100%;
 }
-
+.login {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.form-container {
+  width: 300px;
+  
+}
+.logo {
+  width: 200px;
+  justify-self: center;
+  margin: 50px;
+  margin-bottom: 10px;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  font-size: small;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
 .form input {
-  align-items: end;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 200px;
+  height: 150px;
+ 
   font-size: medium;
   justify-content: space-between;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -23,39 +51,60 @@ header {
   margin: 40px 20px;
   border: 10px;
 }
+input {
+  background-color: rgb(236, 232, 232);
+  border: none;
+  border-radius: 8px;
+  height: 30px;
+  font-size: medium;
+  padding: 6px;
+  margin-bottom: 12px;
+  align-items: flex-end;
+}
+
+#cardNumber{
+  margin-left: 10px;
+}
 
 h1 {
-  width: 50%;
-  margin: 40px auto;
-  border-image: 50px;
-  box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.5);
-  padding: 80px 40px;
-  text-align: left;
-  font-weight: 400;
-  line-height: 1.5;
-  font-family: Arial, Helvetica, sans-serif;
-  background-size: auto;
-}
-form {
+  width: 200px;
+  height: 40px;
+  padding: auto;
+  margin: auto;
+  margin-bottom: 10px;
   text-align: center;
-  padding-right: 20px;
-  margin-left: 30px;
+  font-size: medium;
 }
 
 button {
   box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.5);
   border-style: initial;
-  background: #005ea5;
+  background: #c59a01;
   color: #fff;
   padding: 10px 10px;
-  border-radius: 50px;
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.5s;
-  width: 200px;
+  width: 300px;
   align-items: flex-start;
-  margin: 10px 20px;
   height: 50px;
 }
 .boton:hover {
   transform: scale(1.1);
 }
+#result1{
+  text-align: center;
+  color:rgb(131, 187, 20);
+}
+#result2{
+  text-align: center;
+  color: crimson;
+}
+@media (max-width: 640px) {
+  
+  .contenedor-img{
+    display: none;
+    }
+
+  }
+

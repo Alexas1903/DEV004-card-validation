@@ -5,14 +5,15 @@ document.getElementById("cardNumber").addEventListener("keypress", SoloNumeros);
 //const numero = document.getElementById("cardNumber");
 
 function validate() {
-  const result = document.getElementById("result");
+  const result1 = document.getElementById("result1");
+  const result2 = document.getElementById("result2");
   const valid = validator.isValid(document.getElementById("cardNumber").value);
   if (valid) {
-    result.innerHTML =
+    result1.innerHTML =
       "Su tarjeta es valida " +
       validator.maskify(document.getElementById("cardNumber").value);
   } else {
-    result.innerHTML =
+    result2.innerHTML =
       "Su tarjeta es invalida " +
       validator.maskify(document.getElementById("cardNumber").value);
   }
